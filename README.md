@@ -1,5 +1,3 @@
-Markdown
-
 # Prefect 3 ELT Sales Pipeline 
 
 This project sets up a fully automated ELT (Extract, Load, Transform) pipeline using Prefect 3, Docker, and PostgreSQL.
@@ -75,7 +73,7 @@ docker-compose up --build -d
 
 -d: Runs the services in the background (detached mode) and returns your terminal to you.
 
-🛰️ Deploying and Running the Flow
+  Deploying and Running the Flow
 The services are up, but the Prefect server doesn't know about your flow yet. We need to register it.
 
 1. Deploy the Flow
@@ -98,7 +96,7 @@ Click the Run button in the top right to trigger the flow manually.
 
 You can now watch the flow execute and see its logs live in the UI.
 
-🛑 Stopping and Cleaning Up
+  Stopping and Cleaning Up
 
 When you're finished, stop all services:
 
@@ -106,7 +104,7 @@ When you're finished, stop all services:
 
 docker-compose down
 ```
-⚠️ Resetting the Project (Deleting the Database)
+  Resetting the Project (Deleting the Database)
 If you want to start over from scratch and permanently delete all data in the database (the volumes), use the -v flag:
 
 ```Bash
